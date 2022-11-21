@@ -40,8 +40,11 @@ ul {
 
 .content {
   display: grid;
-  grid-template-columns: repeat(10, minmax(10px, 1fr));
-  grid-template-rows: repeat(9, minmax(10px, 1fr));
+  grid-template-columns: repeat(9, minmax(10px, 1fr));
+  grid-template-rows: repeat(10, minmax(10px, 1fr));
+}
+
+.item {
 }
 
 .content img {
