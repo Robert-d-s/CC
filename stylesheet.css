@@ -41,6 +41,8 @@ picture {
 .container {
   display: grid;
   justify-content: center;
+  align-content: center;
+  justify-items: center;
 }
 
 .logo {
@@ -73,6 +75,7 @@ picture {
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
+  justify-items: center;
 }
 
 .itemtext p {
@@ -133,4 +136,20 @@ picture {
 
 .content img {
   width: 71%;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10px, 1fr));
+  /* grid-template-columns: minmax(auto, max-content); */
+  grid-auto-rows: max-content;
+  /* gap: 2rem; */
+  width: 83.5%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+article img {
+  width: 80%;
 }
