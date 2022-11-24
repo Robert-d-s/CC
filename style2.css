@@ -38,6 +38,16 @@ picture {
 
 /* resets */
 
+@font-face {
+  font-family: "Brice";
+  src: url("assets/fonts/Brice/Brice-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("assets/fonts/Satoshi/OTF/Satoshi-Medium.otf") format("opentype");
+}
+
 .logo {
   width: 95%;
   /* display: flex; */
@@ -97,35 +107,47 @@ picture {
   grid-row: 2/3;
   line-height: 0.8;
   color: #0b25b7;
+  font-family: "Brice";
 }
 
 .btmbanner {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   grid-column: 1/5;
   grid-row: 3/4;
   background-color: #0b25b7;
   color: #ead0ca;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1.4rem 1rem 1.4rem;
   line-height: 1.4;
 }
 
+.btmbanner h1 {
+  font-family: "Brice";
+}
+
+.btmbanner p {
+  font-family: "Satoshi-Medium";
+}
+
 .sidebanner {
-  font-size: 4rem;
+  font-size: 3.8rem;
   writing-mode: sideways-lr;
-  /* text-orientation: sideways-right; */
-  text-orientation: vertical-lr;
+  /* writing-mode: vertical-rl; */
+  /* text-orientation: sideways-right;
+  text-orientation: vertical-lr; */
   grid-column: 5/6;
   grid-row: 1/4;
   color: #0b25b7;
   background-color: #ead0ca;
-  padding: 14rem 0 13rem 0;
+  padding: 9rem 0 6rem 0;
+  font-family: "Brice";
 }
 
 .hts {
   grid-column: 1/6;
   grid-row: 4/5;
-  font-size: 7rem;
+  font-size: 5rem;
   color: #0b25b7;
+  font-family: "Brice";
 }
 
 .cassie {
@@ -145,6 +167,8 @@ picture {
   grid-column: 2/3;
   grid-row: 1/2;
   font-size: 3rem;
+  font-family: "Satoshi-Medium";
+  color: #0b25b7;
 }
 
 .cassie img:nth-child(3) {
@@ -199,6 +223,8 @@ picture {
   grid-column: 3/4;
   grid-row: 1/2;
   font-size: 3rem;
+  font-family: "Satoshi-Medium";
+  color: #0b25b7;
 }
 
 .rue img:nth-child(6) {
@@ -223,6 +249,8 @@ picture {
   grid-column: 2/3;
   grid-row: 1/2;
   font-size: 3rem;
+  font-family: "Satoshi-Medium";
+  color: #0b25b7;
 }
 
 .jules img:nth-child(3) {
@@ -302,11 +330,14 @@ footer {
 footer h1 {
   grid-column: 1/2;
   grid-row: 1/2;
+  font-family: "Satoshi-Medium";
 }
 
 footer p {
   grid-column: 1/2;
   grid-row: 2/3;
+  width: 82%;
+  font-family: "Satoshi-Medium";
 }
 
 footer img:nth-child(3) {
@@ -317,9 +348,35 @@ footer img:nth-child(3) {
 footer ul {
   grid-column: 2/3;
   grid-row: 2/4;
+  align-self: start;
+  font-family: "Satoshi-Medium";
+}
+
+footer ul li {
+  padding: 0.3rem;
 }
 
 footer img:nth-child(5) {
   grid-column: 2/3;
   grid-row: 4/5;
+}
+
+.tag {
+  font-size: 3rem;
+}
+
+.container p:nth-child(7) {
+  font-size: 4rem;
+  font-family: "Brice";
+  color: #0b25b7;
+}
+
+.tag p {
+  font-family: "Satoshi-Medium";
+  color: #0b25b7;
+}
+
+.tag h1 {
+  font-family: "Brice";
+  color: #0b25b7;
 }
